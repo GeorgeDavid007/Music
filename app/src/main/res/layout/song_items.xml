@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:id="@+id/songItems">
+    
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/musicImg"
+        android:background="@drawable/ic_icoplay"
+        android:padding="5dp"/>
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/song_Name"
+        android:text="File Name Here"
+        android:layout_toEndOf="@+id/musicImg"
+        android:layout_toRightOf="@+id/musicImg"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/colorAccent"
+        />-->
+
+    <TextView
+        android:id="@+id/songName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/musicImg"
+        android:layout_toRightOf="@+id/musicImg"
+        android:text="File Name Here"
+        android:singleLine="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:ellipsize="marquee"
+        android:scrollHorizontally="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/artistName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:layout_below="@+id/songName"
+        android:layout_toEndOf="@+id/musicImg"
+        android:layout_toRightOf="@+id/musicImg"
+        android:text="File Name Here"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="12dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="12sp" />
+
+
+
+
+</RelativeLayout>
